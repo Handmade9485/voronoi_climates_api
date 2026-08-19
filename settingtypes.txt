@@ -1,0 +1,14 @@
+[Climate]
+
+#	Control the size of climate zones. Each of these zones will have the same climate.
+#	Note that the same climate does not necessarily mean the same biome, due to changes in elevation.
+#	A value of '100' means that each zone will be roughly 100 nodes in diameter.
+climate_zones_climate_size (Climate Size) int 100 25 1000
+
+#
+climate_zones_climate_spread (Climate Spread) int 256 64 1024
+
+#	Controls the width of the transitions between two climate zones.
+#
+#	Requires: show_advanced
+climate_zones_climate_transition_size (Transition Size) int 10 0 100
