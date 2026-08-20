@@ -9,16 +9,17 @@ local registered_on_climatemap_generated = {}
 ------------------------------------------------------------
 -- Callback API
 ------------------------------------------------------------
+voronoi_climates_api = {}
 
-function register_on_heatmap_generated(callback)
+function voronoi_climates_api.register_on_heatmap_generated(callback)
     table.insert(registered_on_heatmap_generated, callback)
 end
 
-function register_on_humiditymap_generated(callback)
+function voronoi_climates_api.register_on_humiditymap_generated(callback)
     table.insert(registered_on_humiditymap_generated, callback)
 end
 
-function register_on_climatemap_generated(callback)
+function voronoi_climates_api.register_on_climatemap_generated(callback)
     table.insert(registered_on_climatemap_generated, callback)
 end
 
