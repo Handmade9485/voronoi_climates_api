@@ -1,0 +1,5 @@
+#! /usr/bin/env nix-shell
+#! nix-shell -i bash -p zip
+
+rm Archive.zip
+zip Archive.zip config.lua init.lua LICENSE mod.conf README.md settingtypes.txt
