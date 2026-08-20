@@ -5,7 +5,11 @@
 #	A value of '100' means that each zone will be roughly 100 nodes in diameter.
 climate_zones_climate_size (Climate Size) int 100 25 1000
 
+#	Controls the scale of the temperature and humidity noise used to assign climates to zones.
+#	A larger value makes climate values change more gradually across the world, so neighboring climate zones are more likely to have similar climates.
+#	A smaller value produces more rapid changes, allowing neighboring zones to have significantly different climates.
 #
+#	This does not control the size of the climate zones; use Climate Size for that.
 climate_zones_climate_spread (Climate Spread) int 256 64 1024
 
 #	Controls the width of the transitions between two climate zones.

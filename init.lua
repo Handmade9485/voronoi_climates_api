@@ -82,7 +82,7 @@ local function get_climate_noise(x, y, nobj_noise, nobj_heat, nobj_humid)
 
 	local point = {x=min_x * config.climate_size, y=min_y * config.climate_size}
 	local heat = nobj_heat:get_2d(point) * 50 + 50
-	local humid = nobj_humid:get_2d(point) * 05 + 50
+	local humid = nobj_humid:get_2d(point) * 50 + 50
 	return heat, humid
 end
 
